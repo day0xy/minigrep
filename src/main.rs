@@ -1,4 +1,3 @@
-// in main.rs
 use std::error::Error;
 use std::{env, fs, process};
 
@@ -34,6 +33,7 @@ impl Config {
     }
 }
 
+//增加错误处理
 fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(config.file_path)?;
 

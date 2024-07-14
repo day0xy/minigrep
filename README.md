@@ -1,1 +1,1 @@
-simple grep.
+simple grep in Rust
